@@ -1,0 +1,20 @@
+{
+  "name": "eternaltributeph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.9",
+    "qrcode": "^1.5.4",
+    "sib-api-v3-sdk": "^8.5.0"
+  }
+}
