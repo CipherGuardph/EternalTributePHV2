@@ -1,0 +1,358 @@
+
+/* General Body & Typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+/* Buttons */
+.button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Features & Sections */
+.features, .qr-sample, .contact-info {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-top: 0;
+}
+
+.feature-item {
+    margin-top: 1.5rem;
+}
+
+/* Forms */
+.tribute-form {
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Tribute Page Specific */
+.tribute-page header {
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 2px solid #3498db;
+}
+
+.tribute-page h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.tribute-page .message {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+    color: #777;
+}
+
+/* Modern Front Page Styles */
+.hero-modern {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1519751138004-b3034d995dc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.section-modern {
+    padding: 4rem 0;
+}
+
+.section-modern h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.bg-light {
+    background-color: #f4f7f6;
+}
+
+.bg-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.bg-primary h2, .bg-primary p {
+    color: #fff;
+}
+
+.steps-grid, .services-grid, .tribute-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.step-item, .service-card, .tribute-preview-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.step-item:hover, .service-card:hover, .tribute-preview-card:hover {
+    transform: translateY(-5px);
+}
+
+.step-item .icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #e7f3ff;
+    margin: 0 auto 1rem auto;
+    font-weight: bold;
+}
+
+.service-card h3, .tribute-preview-card h4 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p, .tribute-preview-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.primary-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.primary-button:hover {
+    background-color: #2980b9;
+}
+
+.secondary-button {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.secondary-button:hover {
+    background-color: #5a6268;
+}
+
+.small-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    .section-modern h2 {
+        font-size: 2rem;
+    }
+    .steps-grid, .services-grid, .tribute-preview-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tribute Page Specifics */
+.tribute-page .life-dates {
+    font-style: italic;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 2rem 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.biography-content {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.bio-photo {
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 250px;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.biography-content .message {
+    text-align: justify;
+}

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Serial Code - EternalTributePH</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://www.eternaltributeph.com" class="logo">EternalTributePH</a>
+            <ul>
+                <li><a href="https://www.eternaltributeph.com">Home</a></li>
+                <li><a href="/register" class="button">Create a Tribute</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1>Register an Existing QR Code</h1>
+            <p>Enter the serial code printed on your QR code plaque and your details below.</p>
+            <form action="/register/serial" method="POST" class="tribute-form">
+                <div class="form-group">
+                    <label for="serialCode">Serial Code</label>
+                    <input type="text" id="serialCode" name="serialCode" required>
+                </div>
+                <div class="form-group">
+                    <label for="submitterName">Your Name</label>
+                    <input type="text" id="submitterName" name="submitterName" required>
+                </div>
+                <div class="form-group">
+                    <label for="submitterEmail">Your Email</label>
+                    <input type="email" id="submitterEmail" name="submitterEmail" required>
+                </div>
+                <button type="submit" class="button">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EternalTributePH. All rights reserved.</p>
+    </footer>
+</body>
+</html>

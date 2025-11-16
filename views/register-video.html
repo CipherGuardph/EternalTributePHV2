@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tribute Registration - EternalTributePH</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://www.eternaltributeph.com" class="logo">EternalTributePH</a>
+            <ul>
+                <li><a href="https://www.eternaltributeph.com">Home</a></li>
+                <li><a href="/register" class="button">Create a Tribute</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1>New Video Tribute</h1>
+            <p>Enter the details of your loved one to create their memorial page.</p>
+            <form action="/register/video" method="POST" class="tribute-form">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate">Date of Birth</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="deathDate">Date of Passing</label>
+                    <input type="date" id="deathDate" name="deathDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="youtubeUrl">YouTube Video URL</label>
+                    <input type="url" id="youtubeUrl" name="youtubeUrl" placeholder="https://www.youtube.com/watch?v=..." required>
+                </div>
+                <div class="form-group">
+                    <label for="recipientEmail">Your Email (to receive the QR Code)</label>
+                    <input type="email" id="recipientEmail" name="recipientEmail" required>
+                </div>
+                <button type="submit" class="button">Generate Tribute Page</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EternalTributePH. All rights reserved.</p>
+    </footer>
+</body>
+</html>
